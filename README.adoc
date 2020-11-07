@@ -1,0 +1,24 @@
+= Asciidoctorj Quarkus Server
+
+This project is a test to validate how to integrate Asciidoctorj into a Quarkus application.
+
+NOTE: Here's a similar project for SpringBoot https://github.com/abelsromero/asciidoctorj-springboot-server.
+
+== Special requirements
+
+In *Java mode* there's no special needs to package and run it.
+Simply because Quarkus foes not creates uber jars, or use special classloaders.
+
+*Native mode* is not supported given JRuby internal reflection usage (see https://github.com/jruby/jruby/issues/5665).
+
+NOTE: To reproduce the errors seen, the porject includes the configuration to add a replicated Asciidoctorj service provider and a manual instantiation of JRubyAsciidoctor to ensure it's compilation.
+
+== Testing
+
+. Build and run the app with.
+
+ ./mvn clean package && java -jar target/asciidoctorj-quarkus-server-1.0.0-SNAPSHOT-runner.jar
+
+. Go to url to load a converted HTML example document.
+http://localhost:8080/convert
+

@@ -1,0 +1,10 @@
+{
+  "resources": [
+    {
+      "pattern": ".*\\.Asciidoctor$"
+    },
+    {
+      "pattern": ".*\\.yml$"
+    }
+  ]
+}

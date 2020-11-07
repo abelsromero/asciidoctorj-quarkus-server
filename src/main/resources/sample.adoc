@@ -1,0 +1,29 @@
+= This is a title
+Author Name
+:images: images
+:icons: font
+
+This a preamble
+
+== This is a section
+
+These are some replacements. +
+This value is passed from Java: {value}
+
+== Some admonitions
+
+NOTE: Asciidoctor supports font-based admonition icons, powered by Font Awesome!
+
+== Some code
+
+[source,java]
+----
+public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World");
+    }
+
+}
+----
